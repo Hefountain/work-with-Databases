@@ -13,16 +13,16 @@ Base = declarative_base()
 
 # 定义User对象
 
-class User(Base):
+class School(Base):
 	# 表的名字
-	__tablename__ = 'user'
+	__tablename__ = 'school'
 
 	# 表的结构
 	id = Column(Integer, primary_key=True)
-	name = Column(String(20), nullable=False)
+	school_name = Column(String(20), nullable=False)
 
 	def __repr__(self):
-		return "Id=%d name=%s" %(self.id, self.name)
+		return "Id=%d name=%s" %(self.id, self.school_name)
 
 if __name__ == "__main__":
 	print "This (alchemy_entity)script is used by another script"
