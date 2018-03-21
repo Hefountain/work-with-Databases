@@ -11,7 +11,7 @@ from sqlalchemy.ext.declarative import declarative_base
 # 创建对象的基类
 Base = declarative_base()
 
-# 定义User对象
+# 定义School对象
 
 class School(Base):
 	# 表的名字
